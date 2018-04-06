@@ -6,7 +6,7 @@ Install virtualenv via pip:
 ```
 pip install virtualenv
 ```
-If your using version control, dont forget to create add your venv to your gitignore
+If your using version control, dont forget to add your venv to your gitignore
 ```
 touch .gitignore
 ```
