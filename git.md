@@ -98,3 +98,11 @@ git merge example
 ```Shell
 git push origin master
 ```
+
+---
+
+## bibliography
+
+* [GIT](https://git-scm.com/book/en/v2)
+* [Bitbucket](http://bitbucket.org)
+* [Github](https://github.com/)
