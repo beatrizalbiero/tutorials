@@ -70,11 +70,11 @@ If you have one issue and don't want to mess with the main code, is good to crea
 
 1. Create new branch
 ```Shell
-git branch exemple
+git branch example
 ```
 2. Start working on your new branch
 ```Shell
-git checkout exemple
+git checkout example
 ```
 3. [*On the new branch*] to commit the branches:
 ```Shell
@@ -84,3 +84,17 @@ git push origin example
 ---
 
 ## Merging Branchs
+After your tasks on branch are over, you will have to merge the changes on the **master** branch, to do so":
+
+1. checkout to master
+```Shell
+git checkout master
+```
+2. merge
+```Shell
+git merge example
+```
+3. push your change to the repository:
+```Shell
+git push origin master
+```
