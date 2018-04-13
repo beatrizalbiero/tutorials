@@ -90,7 +90,7 @@ After your tasks on branch are over, you will have to merge the changes on the *
 ```Shell
 git checkout master
 ```
-2. merge
+2. merge branch on the master:
 ```Shell
 git merge example
 ```
@@ -100,9 +100,26 @@ git push origin master
 ```
 
 ---
+## Cloning a git repository
+Sometimes you will have to clone a repository, i.e get the repository locally:
+1. define your repository path:
+```Shell
+cd path/to/repository
+```
+2. in the github or bitbucket copy the https path protocol:
+  * GitHub
+![github](img\git\github_clone.PNG)
+  * bitbucket
+![bitbucket](img\git\bitbucket_clone.PNG)
+
+3. now just clone it:
+```
+git clone git://github.com/schacon/grit.git
+```
+---
 
 ## bibliography
 
-* [GIT](https://git-scm.com/book/en/v2)
+* [GIT Documentation](https://git-scm.com/book/en/v2)
 * [Bitbucket](http://bitbucket.org)
 * [Github](https://github.com/)
