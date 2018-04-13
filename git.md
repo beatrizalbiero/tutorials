@@ -7,7 +7,7 @@ Git is a version control system (VCS) for code. It is used to keep track of revi
 
 1. [Download](https://git-scm.com/downloads) git.
 
-2. Create an Online Git repository
+2. **Create an Online Git repository**
 
 You can create your account on [GitHub](https://github.com/) for public repositories or [Bitbucket](https://bitbucket.org/) for private repositories for free.
 
@@ -18,6 +18,10 @@ Follow instructions [here](https://confluence.atlassian.com/bitbucket/set-up-an-
 
 ---
 ## Learn the basics
+
+### how to create a project repository
+
+After you create your repository in GitHub or Bitbucket:
 
 1. Create a Local Project
 ```
@@ -36,7 +40,7 @@ git config --global user.email username@email.com
 
 4. Hook up local directory with the repo we made at github.com or bitbucket, for example:
 ```
-git remote add origin https://github.com/you/project
+git remote add origin https://github.com/your_username/project_name
 ```
 
 5. Check the status of your local repository.
@@ -44,8 +48,10 @@ git remote add origin https://github.com/you/project
 git status
 ```
 6. Add ALL the files to the repo.
-```
+```Shell
 git add .
+#or individually
+git add filename1 filename2 filename3 ...
 ```
 7. Commit tracked files to the master branch
 ```
@@ -54,19 +60,27 @@ git commit -am "Type here changes you've made on your work"
 In this section, you should type changes you've made on your code so you can track them later.
 
 8. Push the files to the Git repo at github.com.
-```
+```Shell
 git push origin master
 ```
 
 ---
 ## New Branches
+If you have one issue and don't want to mess with the main code, is good to create a branch:
 
 1. Create new branch
-```
-git branch exemplo
+```Shell
+git branch exemple
 ```
 2. Start working on your new branch
+```Shell
+git checkout exemple
 ```
-git checkout exemplo
+3. [*On the new branch*] to commit the branches:
+```Shell
+git push origin example
 ```
+
 ---
+
+## Merging Branchs
