@@ -42,11 +42,12 @@ mkdir project-local
 cd project-local
 ```
 
-2. To prepare your project to be a Git repository do :
+2. To prepare your project to be a Git repository type:
 ```Shell
 git init
 ```
-This will creater a ".git" directory with files to version control your file.
+This will create a ".git" directory with files that will start version controlling your folder.
+
 3. Configure your global Git account
 ```
 git config --global user.name "Firstname Lastname"
@@ -62,6 +63,7 @@ git remote add origin https://github.com/your_username/project_name
 ```
 git status
 ```
+
 6. Add ALL the files to the repo :
 ```Shell
 git add .
@@ -72,15 +74,18 @@ git add filename1 filename2 filename3 ...
 
   Commit is a common command that after you update a change in your code you will *record* it changes and take a note to what have you done:
 ```
-git commit -am "Type here changes you've made on your work"
+git commit -m "Type here changes you've made on your work"
 ```
 In this section, you should type changes you've made on your code so you can track them later.
 
-8. Now you send the files to the Git repo at github.com or bitbucket:
+8. Send files to the Git repo at github.com or bitbucket:
 ```Shell
 git push origin master
 ```
+---
+## Git Ignore
 
+Create a file named ".gitignore"
 ---
 ## New Branches
 If you have one issue or a **BRAND NEW FEATURE THAT WILL REVOLUTIONIZE THE WORLD** and don't want to mess with the main code (MASTER), is good to create a branch for this code:
@@ -134,6 +139,22 @@ cd path/to/repository
 git clone git://github.com/schacon/grit.git
 ```
 ---
+## If you're not up to date with the origin
+
+Here are a few useful commands to help you with that.
+
+If you want to **cancel** your last commit:
+```Shell
+git reset --hard origin/master
+```
+#### **<< edit files as necessary >>**
+---
+To  Pull origin files:
+```
+git pull origin master   
+```
+Important: pull the origin of the branch you are currently working on, it is not necessarily the master branch.
+
 
 ## bibliography
 
