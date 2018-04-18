@@ -7,14 +7,27 @@ Git is a version control system (VCS) for code. It is used to keep track of revi
 
 1. [Download](https://git-scm.com/downloads) git.
 
-2. **Create an Online Git repository**
+2. Create an account on bitbucket or github:
 
-You can create your account on [GitHub](https://github.com/) for public repositories or [Bitbucket](https://bitbucket.org/) for private repositories for free.
+  * [GitHub](https://github.com/) for public repositories
+  * [Bitbucket](https://bitbucket.org/) for private repositories for free.
 
 
-3. Configurate SSH Key
+3. **Create an Online Git repository**
 
-Follow instructions [here](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html) for Bitbucket or [here](https://help.github.com/articles/connecting-to-github-with-ssh/) for GitHub.
+  Create a repository with a chosen name :
+  * [GitHub](https://help.github.com/articles/create-a-repo/)
+  * [Bitbucket](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html)
+
+  Repository is a way to  to share your code with your team or public.
+
+4. Configurate SSH Key
+
+  For security reasons SSH key is a measure to give permission to the user to modify the source code remotely.
+
+  Every time you are in a different network, you will have to configure it.
+
+  Follow instructions [here](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html) for Bitbucket or [here](https://help.github.com/articles/connecting-to-github-with-ssh/) for GitHub.
 
 ---
 ## Learn the basics
@@ -23,22 +36,24 @@ Follow instructions [here](https://confluence.atlassian.com/bitbucket/set-up-an-
 
 After you create your repository in GitHub or Bitbucket:
 
-1. Create a Local Project
-```
+1. Create a Local Project and enter the folder:
+```Shell
 mkdir project-local
+cd project-local
 ```
 
-2. Start Git
-```
+2. To prepare your project to be a Git repository do :
+```Shell
 git init
 ```
+This will creater a ".git" directory with files to version control your file.
 3. Configure your global Git account
 ```
 git config --global user.name "Firstname Lastname"
 git config --global user.email username@email.com
 ```
 
-4. Hook up local directory with the repo we made at github.com or bitbucket, for example:
+4. To **link** your local directory with the repository we made at github.com or bitbucket, for example:
 ```
 git remote add origin https://github.com/your_username/project_name
 ```
@@ -47,26 +62,28 @@ git remote add origin https://github.com/your_username/project_name
 ```
 git status
 ```
-6. Add ALL the files to the repo.
+6. Add ALL the files to the repo :
 ```Shell
 git add .
 #or individually
 git add filename1 filename2 filename3 ...
 ```
 7. Commit tracked files to the master branch
+
+  Commit is a common command that after you update a change in your code you will *record* it changes and take a note to what have you done:
 ```
 git commit -am "Type here changes you've made on your work"
 ```
 In this section, you should type changes you've made on your code so you can track them later.
 
-8. Push the files to the Git repo at github.com.
+8. Now you send the files to the Git repo at github.com or bitbucket:
 ```Shell
 git push origin master
 ```
 
 ---
 ## New Branches
-If you have one issue and don't want to mess with the main code, is good to create a branch:
+If you have one issue or a **BRAND NEW FEATURE THAT WILL REVOLUTIONIZE THE WORLD** and don't want to mess with the main code (MASTER), is good to create a branch for this code:
 
 1. Create new branch
 ```Shell
