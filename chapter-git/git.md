@@ -130,9 +130,9 @@ cd path/to/repository
 ```
 2. in the github or bitbucket copy the https path protocol:
   * GitHub
-![github](img\git\github_clone.PNG)
+![github](..\img\git\github_clone.PNG)
   * bitbucket
-![bitbucket](img\git\bitbucket_clone.PNG)
+![bitbucket](..\img\git\bitbucket_clone.PNG)
 
 3. now just clone it:
 ```
