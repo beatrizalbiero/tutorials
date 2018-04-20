@@ -1,3 +1,10 @@
+# Contributors
+* [Beatriz Albiero](https://github.com/beatrizalbiero)
+
+* [Augusto Ferrari](https://github.com/augustot2)
+
+* [Rafael Abud](https://github.com/rafaelabud)
+
 # Introduction
 
 Do not expect this guide to work to solve all your problems, but to give you a first steps to improve your developers skill! If you have any comments, improvements or even a new chapter to add, feel free to fork or clone this repository and send us a message!
